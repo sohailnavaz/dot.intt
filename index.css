@@ -178,6 +178,9 @@ display: block;
 .dropdown1:hover .dropdown-content1 {
 display: block;
 }
+.dropdown2:hover .dropdown-content2 {
+display: block;
+}
 .dropdown-content {
 display: none;
 position: fixed;
@@ -196,6 +199,16 @@ z-index: 9;
 transform: translate3d(0, 0, 0);
 transition: ease-in-out .2s all;
 }
+.dropdown-content2 {
+display: none;
+position: fixed;
+top: 66%;
+right: 50px;
+z-index: 9;
+transform: translate3d(0, 0, 0);
+transition: ease-in-out .2s all;
+}
+
 .form-container {
 width: 270px;
 padding: 10px;
