@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        
+
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script> -->
@@ -153,7 +153,7 @@
         </div>
 
 
-        
+
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-g-transparent border_bottom">
             <a routerlink="/home" routerlinkactive="active" class="navbar-brand active" ng-reflect-router-link="/home" ng-reflect-router-link-active="active" href="/home">
             <img src="./assests//Securisk logo 1.svg" alt="" width="150px" height="60px"></a>
@@ -180,19 +180,13 @@
                     <img src="./assests//Securisk logo 1.svg" alt="" width="150px">
                 </a>
             </div>
-            <ul class="menu-list"> 
-                <li onclick = "navigateIt('about.html')"><a href="/product.html">About</a></li>
-                <li onclick = "navigateIt('product.html')"><a href="/product.html">Products </a></li>
-                <li onclick = "navigateIt('services.html')" ><a href="/services.html">Services</a></li>
-                <li  onclick = "navigateIt('contact.html')"><a href="/contact.html"> Contact </a></li>
-            </ul>
-<!-- 
+
             <ul class="menu-list">
-                <li><a href="./about.html">About </a></li>
-                <li><a href="./product.html">Products </a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./contact.html"> Contact </a></li>
-            </ul> -->
+                <li onclick="navigateIt('about.html')"><a href="/about.html">About </a></li>
+                <li onclick="navigateIt('product.html')"><a href="/product.html">Products </a></li>
+                <li onclick="navigateIt('services.html')"><a href="/services.html">Services</a></li>
+                <li onclick="navigateIt('contact.html')"><a href="/contact.html"> Contact </a></li>
+            </ul>
 
             <div class="humbarger">
                 <div class="bar"></div>
@@ -343,7 +337,7 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center" style="color: white;">
-                        <p>© Copyright 2021 Securisk Insurance Brokers (P) Ltd - IRDA Registration No. 597 (Validity:
+                        <p>© Copyright 2021 Securisk Insurance Brokers (P) Ltd  Direct Insurance Broker (General)- IRDA Registration No. 597 (Validity:
                             1st May
                             2020 to 30th April 2023) | CIN No.: U67200PB2013PTC037781 Insurance is a subject matter of
                             solicitation.</p>
@@ -359,10 +353,14 @@
 
 
     <script>
+        function navigateIt(route) {
+            window.location.href = "./" + route;
+        }
         $(document).ready(function () {
 
             //hamburger Toggle
             $('.humbarger').click(function (event) {
+                console.log("clicked");
                 $('.menu-list').slideToggle(500);
                 event.preventDefault();
 
