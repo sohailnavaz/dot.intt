@@ -148,12 +148,7 @@ header .navigation .menu-list li a {
   transition: color 1s ease, border 1s ease;
   text-decoration: none;
 }
-.icon-bar{
-  background-color: #101010;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 50px;
-}
+
 .icon-bar {
 position: fixed;
 top: 50%;
@@ -196,7 +191,7 @@ display: block;
 .dropdown-content {
 display: none;
 position: fixed;
-top: 15%;
+top: 10%;
 right: 50px;
 z-index: 9;
 transform: translate3d(0, 0, 0);
@@ -233,13 +228,16 @@ transition: ease-in-out .2s all;
 .form-container {
 width: 270px;
 padding: 10px;
+margin-right: 20px;
 background-color: white;
 border-radius: 5px;
 transform: translate3d(0, -20%, 0);
+left: 25%;
 }
 .form-container1 {
 width: 90px;
 padding: 10px;
+margin-right: 20px;
 background-color: white;
 border-radius: 5px;
 transform: translate3d(0, -20%, 0);
@@ -247,6 +245,7 @@ transform: translate3d(0, -20%, 0);
 .form-container2 {
 width: 120px;
 padding: 10px;
+margin-right: 20px;
 background-color: white;
 border-radius: 5px;
 transform: translate3d(0, -20%, 0);
@@ -254,6 +253,7 @@ transform: translate3d(0, -20%, 0);
 .form-container3 {
 width: 160px;
 padding: 10px;
+margin-right: 20px;
 background-color: white;
 border-radius: 5px;
 transform: translate3d(0, -20%, 0);
