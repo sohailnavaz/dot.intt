@@ -148,7 +148,12 @@ header .navigation .menu-list li a {
   transition: color 1s ease, border 1s ease;
   text-decoration: none;
 }
-
+.icon-bar{
+  background-color: #101010;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+}
 .icon-bar {
 position: fixed;
 top: 50%;
